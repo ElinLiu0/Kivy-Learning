@@ -1,0 +1,31 @@
+<BoxLayoutWidget>:
+    orientation:'vertical'
+    padding:[10,40,40,30] # 这里Padding边路指的是父组件的四个边的间距
+
+    # 使用Canvas设置背景色
+    canvas:
+        Color:
+            rgba:[1,1,1,1]
+        Rectangle:
+            pos:self.pos
+            size:self.size
+
+    Button:
+        text:'Hello'
+        background_color:[0.6,0.2,0.2,1]
+
+    Button:
+        text:'World'
+        background_color:[0.2,0.6,0.3,1]
+
+    BoxLayout: #添加一个盒型布局
+        orientation:'horizontal' # 指定水平方向布局
+        spacing:20 # 指定子组件之间的间距
+        Button:
+            text:'First'
+            background_color:[0.2,0.2,0.7,1]
+        Button:
+            text:'Second'
+            size_hint_y:0.3 # 指定组件的高度为父组件的0.3倍
+            background_color:[0.2,0.2,0.7,1]
+

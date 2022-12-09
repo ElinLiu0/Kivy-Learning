@@ -1,0 +1,9 @@
+<PosFloat>:
+    Button:
+        text: 'PosFloat1'
+        size_hint: 0.2, 0.15 # 这里size_hint是目标控件的大小与父控件的大小的比值，这意味着它的值其实是Button控件的控件大小与窗口大小的比值
+        pos_hint: {'x': 0.1, 'y': 0.1} # 这里的pos_hint是相对于父控件的大小，而不是屏幕的大小，这意味着它的值其实是Button控件的控件坐标与窗口坐标的比值
+    Button:
+        text: 'PosFloat2'
+        size_hint: 0.2, 0.15
+        pos: 200, 200

@@ -1,0 +1,31 @@
+<Button>:
+    font_size:40
+    size_hint:0.3,0.3
+
+<FloatLayoutWidget>:
+    canvas:
+        Color:
+            rgba:[1,1,1,1]
+        Rectangle: # 因为我们的FloatLayout其实本质上是一个Rectangle对象，因此我们可以让其pos和size直接继承自父组件的变化
+            pos:self.pos
+            size:self.size
+    Button:
+        text:'1'
+        background_color:[0.1,0.5,0.6,1]
+        pos_hint:{'x':0,'y':1}
+    Button:
+        text:'2'
+        background_color:[1,0,0,1]
+        pos_hint:{'x':0.35,'y':0.3}
+    Button:
+        text:'3'
+        background_color:[0.4,0.5,0.6,1]
+        pos_hint:{'x':0.7,'y':0}
+    Button:
+        text:'4'
+        background_color:[0,0,1,1]
+        pos_hint:{'x':0.7,'y':1}
+    Button:
+        text:'5'
+        background_color:[0.8,0.9,0.2,1]
+        pos_hint:{'x':0,'y':1}

@@ -1,0 +1,28 @@
+<BoxVertical>:
+    orientation: 'vertical'
+
+    # 设置背景颜色
+    canvas:
+        Color:
+            rgba:[1,1,1,1]
+
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    Button:
+        text:'Hello' # 最新的Kivy2中已经支持了中文
+
+    Button:
+        text:'World'
+
+    BoxLayout:
+        orientation: 'horizontal'
+
+        Button:
+            text:'first'
+            size_hint_y:.2
+        
+        Button:
+            text:'second'
+            size_hint_y:.3
